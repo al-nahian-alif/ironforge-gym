@@ -1,4 +1,5 @@
 import './globals.css'
+import GymChatbot from "@/components/GymChatbot";  // ← ADD THIS
 
 export const metadata = {
   title: 'IronForge Gym — Forge Your Legacy',
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <GymChatbot />
+      </body>
     </html>
   )
 }
